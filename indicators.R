@@ -13,18 +13,17 @@
 ##################################################
 library(readxl)
 
-setwd('/Users/zackoyafuso/Google Drive/EwE/HI_EwE/')
-#setwd('C:/Users/Zack Oyafuso/Google Drive/EwE/HI_EwE/')
+setwd('/Users/zackoyafuso/Documents/GitHub/Hawaii_EwE')
 
 ##################################################
 ## Settings
 ##################################################
 
 ## Recreational Catch Composition
-load('rec_comp.RData')
+load('data/Rec_Component/rec_comp.RData')
 
 ## Price, Trophic Level and Rec Composition of each FG
-cost_TL = read.csv('TL_cost.csv', stringsAsFactors = F)
+cost_TL = read.csv('data/TL_cost.csv', stringsAsFactors = F)
 cost_TL$cost = cost_TL$cost
 cost_TL$rec_comp = 0
 cost_TL$rec_comp[match(names(rec_comp), cost_TL$FG )] = rec_comp
