@@ -1,0 +1,10 @@
+name: hi_ewe
+title:
+username:
+account: zoyafuso-noaa
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1772301
+bundleId: 2780245
+url: https://zoyafuso-noaa.shinyapps.io/hi_ewe/
+when: 1581011617.36173
